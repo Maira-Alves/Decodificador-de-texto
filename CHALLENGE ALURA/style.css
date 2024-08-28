@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #F3F5FC;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.logoAlura {
+    left: 500px;
+    top: 40px;
+    width: 120px;
+    height: 48px;
+    gap: 40px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha os painéis ao topo */
+    padding-top: 20px; /* Espaçamento entre a logo e os painéis */
+    gap: 40px; /* Espaçamento entre left-panel e right-panel */
+}
+
+
+.left-panel, .right-panel {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-panel {
+    width: 60%; /* 60% da largura da tela */
+    background-color: #F3F5FC;
+}
+
+.right-panel {
+    width: 505px;
+    height: 1000px;
+    border-radius: 32px;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-area {
+    width: 680px;
+    height: 288px;
+    padding: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 20px; 
+    margin-left: -543px ;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    color: #0A3871;
+    resize: none;
+    background-color: #F3F5FC;
+    border: none; /* Remove a borda */
+    outline: none; /* Remove o contorno ao focar */
+    box-shadow: none; /* Remove sombras */
+    overflow: hidden; /* Remove barras de rolagem */
+}
+
+.informacao {
+    margin-top: 494px;
+    width: 100%;
+    font-size: 0.9375rem;
+    color: #495057;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 450px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+    margin-top: px;
+    width: 100%;
+    padding-top: 20px;
+    align-items: flex-end;
+}
+
+.btn-encriptar, .btn-desencriptar, .btn-copiar {
+    background-color: #0A3871;
+    color: white;
+    width: 336px;
+    height: 67px;
+    border: none;
+    padding: 24px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-desencriptar {
+    margin-top: -100px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    margin-right: 350px;
+    margin-top: -15000px;
+    transition: background-color 0.3s;
+}
+
+.btn-encriptar {
+    margin-left: 200px; 
+    margin-top: -30000px;
+}
+
+.btn-copiar {
+    background-color: white;
+    color: #0A3871;
+    border: 2px solid #0A3871;
+    display: none;
+    align-items: center;
+    width: 336px;
+    align-items: flex-end;
+    margin-top: 444px;
+}
+
+.btn-encriptar:hover, .btn-desencriptar:hover, .btn-copiar:hover {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    align-items: flex-end;
+}
+
+.mensagem {
+    display: flex; /* Mostra a imagem e o texto lado a lado */
+    flex-direction: column; /* Empilha-os verticalmente */
+    align-items: center;
+    width: 100%;
+    margin-top: 175px;
+    text-align: center;
+    width: 100%;
+    width: 336px;
+    height: 304px;
+    top: 283px;
+    left: 1032px;
+    align-items: flex-end;
+}
+
+.mensagem h3, .mensagem p {
+    text-align: center;
+    width: 336px;
+    height: 122px;
+    top: 619px;
+    left: 1032px;
+    gap: 16px;
+    font-size: 18px;
+    color: #0A3871;
+    margin-top: 20px;
+    align-items: flex-end;
+}
+
+footer {
+  font-size: 0.65em;
+  text-align: left; 
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .left-panel, .right-panel {
+        width: 100%;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    .btn-encriptar, .btn-desencriptar {
+        width: 100%;
+        align-items: flex-end;
+    }
+}
